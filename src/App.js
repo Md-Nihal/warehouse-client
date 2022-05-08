@@ -13,6 +13,7 @@ import Login from './Pages/Login/Login/Login';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
