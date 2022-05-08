@@ -1,0 +1,71 @@
+[
+    {
+        "name": "canon mark 3",
+        "price": "40000",
+        "description": "Most sale camera product. A Good quality",
+        "supplier":"Adnan",
+        "quantity":13,
+        "img": "https://i.ibb.co/P9ZnjML/camera1-1.png" 
+    },
+    
+    {
+        "name": "asus rog",
+        "price": "25000",
+        "description": "Impressive performance. Good expression",
+        "supplier":"Dip",
+        "quantity":12,
+        "img": "https://i.ibb.co/1RKvS7y/laptop2-1.png" 
+    },
+    
+    {
+        "name": "Nikon",
+        "price": "35000",
+        "description": "A good camera with low price. A profitable business.",
+        "supplier":"Efty",
+        "quantity":11,
+        "img": "https://i.ibb.co/dj9QrrD/camera21.png " 
+    },
+    
+    {
+        "name": "lenevo",
+        "price": "25000",
+        "description": "Impressive product with good quality.have a good performance.",
+        "supplier":"Nihal",
+        "quantity":11,
+        "img": "https://i.ibb.co/PG46b5s/laptop3-1.png" 
+    },
+    {
+        "name": "HP",
+        "price": "30000",
+        "description": "All type of work. flexibale. Have a long lust charge backup.",
+        "supplier":"Rizvee",
+        "quantity":12,
+        "img": "https://i.ibb.co/1RKvS7y/laptop2-1.png" 
+    },
+    {
+        "name": "Iphone 12",
+        "price": "34000",
+        "description": "Latest phone. low price, good quality",
+        "supplier":"Kaiyum",
+        "quantity":13,
+        "img": "https://i.ibb.co/7vdPjmx/phone3-1.png" 
+    },
+    {
+        "name": "Iphone 15",
+        "price": "50000",
+        "description": "Update phone. Have a good capability for storage",
+        "supplier":"Faiyaz",
+        "quantity":14,
+        "img": "https://i.ibb.co/QCjMwWH/new1.png" 
+    },
+    
+    {
+        "name": "Iphone 14",
+        "price": "40000",
+        "description": "Excellent camera and battery backup.",
+        "supplier":"Arko",
+        "quantity":15,
+        "img": "https://i.ibb.co/LCh1RpS/new-2.png" 
+    }
+    
+]

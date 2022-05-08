@@ -4,11 +4,11 @@ const useProducts = () =>{
     const [products, setProducts] = useState([]);
     
     useEffect( ()=>{
-        fetch('https://fathomless-headland-51917.herokuapp.com/service')
+        fetch('http://localhost:5000/products')
         .then(res => res.json())
         .then(data => setProducts(data));
     }, [])
-    return [products,setProducts]
+    return [products, setProducts]
 
 }
 export default useProducts;
