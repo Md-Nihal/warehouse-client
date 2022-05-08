@@ -9,7 +9,7 @@ const Header = () => {
                 <Container className='d-flex'>
                     <Navbar.Brand as={Link} to="/">Digital Supply Co.</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/inventory">Inventory</Nav.Link>
                     </Nav>
 
