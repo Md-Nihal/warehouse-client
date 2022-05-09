@@ -2,7 +2,6 @@ import { async } from '@firebase/util';
 import { sendEmailVerification } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import useToken from '../../../Token/useToken';
@@ -21,7 +20,8 @@ const SignUp = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-    const [token] = useToken(user)
+    const [token] = useToken(user);
+    
     const handleLogin = () => {
         navigate('/login')
     }
@@ -48,11 +48,6 @@ const SignUp = () => {
     console.log(user)
     return (
         <div className='register-form'>
-
-            {/* adding title */}
-            <Helmet>
-                <title> SignUp - My Car Services</title>
-            </Helmet>
 
             {/* adding input */}
 

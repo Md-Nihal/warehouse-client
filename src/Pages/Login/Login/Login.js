@@ -8,7 +8,6 @@ import SocialLogIn from '../SocialLogIn/SocialLogIn';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
-import { Helmet } from 'react-helmet-async';
 import axios from 'axios';
 import useToken from '../../../Token/useToken';
 
@@ -67,10 +66,7 @@ const Login = () => {
 
     return (
         <div className='w-50 mx-auto'>
-            {/* adding title */}
-            <Helmet>
-                <title> Login - My Car Services</title>
-            </Helmet>
+           
 
             {/* adding input */}
             <h1 className='text-primary text-center mt-3'>Please Login</h1>
@@ -93,7 +89,7 @@ const Login = () => {
 
             </Form>
             {errorElement}
-            <p>New in Genius Car Service? <Link to={'/register'} className='text-primary pe-auto text-decoration-none' onClick={handleRegister} >Please register</Link></p>
+            <p>New in Digital Supply Co? <Link to={'/register'} className='text-primary pe-auto text-decoration-none' onClick={handleRegister} >Please register</Link></p>
             <p>Forgot password? <button to={'/register'} className=' btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword} >Reset password</button></p>
             <ToastContainer />
             <SocialLogIn></SocialLogIn>

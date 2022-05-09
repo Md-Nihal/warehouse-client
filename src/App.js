@@ -14,6 +14,8 @@ import SignUp from './Pages/Login/SignUp/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
 import { ToastContainer } from 'react-toastify';
+import Blogs from './Pages/Blogs/Blogs';
+import AddProdutcs from './Pages/AddProducts/AddProdutcs';
 
 
 function App() {
@@ -27,6 +29,11 @@ function App() {
         <Route path='/products/:inventoryId' element={<RequireAuth>
           <SingleInventory></SingleInventory>
         </RequireAuth>}></Route>
+        <Route path='/addproduct' element={
+          <RequireAuth>
+            <AddProdutcs></AddProdutcs>
+          </RequireAuth>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
