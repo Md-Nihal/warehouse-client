@@ -44,6 +44,7 @@ const Login = () => {
         const password = passwordRef.current.value;
         
         await signInWithEmailAndPassword(email, password)
+        const {data} = await axios.post('https://morning-meadow-63483.herokuapp.com/login', {email})
 
        
         // navigate(from, { replace: true });

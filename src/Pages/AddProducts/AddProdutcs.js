@@ -20,7 +20,7 @@ const AddProdutcs = () => {
     }
     return (
         <div className='w-50 mx-auto'>
-            <h2>Please add a service</h2>
+            <h2>Please add a Products</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='name' {...register("name")} />
                 <textarea className='mb-2' placeholder='Description' {...register("description")} />
