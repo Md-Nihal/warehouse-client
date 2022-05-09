@@ -14,7 +14,7 @@ const SingleProduct = ({product}) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you want to delete?')
         if(proceed){
-            const url = `http://localhost:5000/products/${id}`
+            const url = `https://morning-meadow-63483.herokuapp.com/products/${id}`
             fetch(url, {
                 method: "DELETE"
             })

@@ -18,7 +18,7 @@ const Header = () => {
                     <Navbar.Brand as={Link} to="/">Digital Supply Co.</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/inventory">Inventory</Nav.Link>
+                        <Nav.Link as={Link} to="/inventory">Manage Inventory</Nav.Link>
                     </Nav>
 
                     <Nav>
@@ -26,8 +26,8 @@ const Header = () => {
                             {
                                 user && <>
                                     <Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link>
-                                    <Nav.Link as={Link} to="/manage">Manage</Nav.Link>
-                                    <Nav.Link as={Link} to="/orders">My Items</Nav.Link>
+                                    
+                                    <Nav.Link as={Link} to="/myitem">My Items</Nav.Link>
                                 </>
 
                             }

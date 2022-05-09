@@ -4,12 +4,12 @@ const useProductDetail = inventoryId =>{
     const [product, setProduct] = useState([]);
 
     useEffect(()=>{
-        const url = `http://localhost:5000/products/${inventoryId}`
+        const url = `https://morning-meadow-63483.herokuapp.com/products/${inventoryId}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[inventoryId])
 
-    return [product];
+    return [product, setProduct];
 }
 export default useProductDetail;
