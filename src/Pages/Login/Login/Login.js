@@ -32,7 +32,7 @@ const Login = () => {
         return <Loading ></Loading>
     }
 
-    if (token) {
+    if (token || user) {
         navigate(from, { replace: true })
     }
     if (error) {
